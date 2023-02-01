@@ -1,6 +1,6 @@
 import { v4 as uuidV4 } from 'uuid'
 
-class Category {
+export class Category {
   id?: string
   name: string
   description: string
@@ -10,5 +10,3 @@ class Category {
     if (!this.id) this.id = uuidV4()
   }
 }
-
-export { Category }

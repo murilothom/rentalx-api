@@ -1,12 +1,10 @@
 import { Category } from '../model/Category'
+import {
+  ICategoriesRepository,
+  ICreateCategoryDTO,
+} from './ICategoriesRepository'
 
-// DTO => Data Transfer Object
-interface ICreateCategoryDTO {
-  name: string
-  description: string
-}
-
-class CategoriesRepository {
+export class CategoriesRepository implements ICategoriesRepository {
   private categories: Category[]
 
   constructor() {
@@ -34,5 +32,3 @@ class CategoriesRepository {
     return category
   }
 }
-
-export { CategoriesRepository }

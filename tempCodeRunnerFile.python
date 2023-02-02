@@ -1,4 +1,0 @@
-some_list = ['não sei', 'sei la']
-
-for word in some_list:
-  print(word)
